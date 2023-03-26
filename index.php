@@ -13,7 +13,6 @@ else:
   <?php wp_head(); ?>
 </head>
 <body>
-  <p><?php  ?></p>
 <?php
 if ( have_posts() ) {  // wpの内容表示
 	while ( have_posts() ) {
