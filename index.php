@@ -1,7 +1,5 @@
 <?php
-if( ! current_user_can( 'edit_posts' )): // 編集できない人には404を返す
-  http_response_code( 404 ) ;
-else:
+if( ! current_user_can( 'edit_posts' )){exit;}
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -30,5 +28,3 @@ if ( have_posts() ) {  // wpの内容表示
 <?php wp_footer(); ?>
 </body>
 </html>
-<?php
-endif;
